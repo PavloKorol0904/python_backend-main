@@ -176,7 +176,7 @@ class TritonPythonModel:
         with self.inflight_thread_count_lck:
             self.inflight_thread_count += 1
 
-        thread.start()
+        thread.start()yuiyui
 
         # Read WAIT input for wait time, then return so that Triton can call
         # execute again with another request.

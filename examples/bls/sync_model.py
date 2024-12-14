@@ -32,7 +32,6 @@ import json
 # and converting Triton input/output types to numpy types.
 import triton_python_backend_utils as pb_utils
 
-
 class TritonPythonModel:
     """Your Python model must use the same class name. Every Python model
     that is created must have "TritonPythonModel" as the class name.

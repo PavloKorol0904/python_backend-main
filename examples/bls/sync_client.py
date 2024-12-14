@@ -79,7 +79,7 @@ with httpclient.InferenceServerClient("localhost:8000") as client:
     if not np.allclose(input0_data - input1_data, output1_data):
         print("BLS sync example error: incorrect difference")
         sys.exit(1)
-
+        
     # Will perform the inference request on the pytorch model:
     inputs[2].set_data_from_numpy(np.array(["pytorch"], dtype=np.object_))
     response = client.infer(model_name, inputs, request_id=str(1), outputs=outputs)
